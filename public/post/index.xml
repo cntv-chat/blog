@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 一起听风雨</title>
+    <link>https://www.456766.xyz/post/</link>
+    <description>Recent content in Posts on 一起听风雨</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 31 Oct 2023 16:52:18 +0800</lastBuildDate>
+    <atom:link href="https://www.456766.xyz/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试发布信息</title>
+      <link>https://www.456766.xyz/post/%E6%B5%8B%E8%AF%95%E5%8F%91%E5%B8%83%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Tue, 31 Oct 2023 16:52:18 +0800</pubDate>
+      <guid>https://www.456766.xyz/post/%E6%B5%8B%E8%AF%95%E5%8F%91%E5%B8%83%E4%BF%A1%E6%81%AF/</guid>
+      <description>今天在部署Blog的时候，突然想到一个名字“一起听风雨”，暂时用他作为我Blog的名字吧。
+图床也可以用了。利用github实现免费的图床服务，Cloudflare真是个好东西</description>
+    </item>
+  </channel>
+</rss>
