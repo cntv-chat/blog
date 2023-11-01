@@ -1,9 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>一起听风雨</title>
-        <link>https://www.456766.xyz/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 31 Oct 2023 16:52:18 &#43;0800</lastBuildDate>
-            <atom:link href="https://www.456766.xyz/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
-</rss>

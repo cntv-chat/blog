@@ -1,4 +1,5 @@
-baseURL = 'https://www.456766.xyz/'
-languageCode = 'zh-cn'
-title = '一起听风雨'
-theme = 'LoveIt'
+baseURL = "https://www.456766.xyz/"
+title = "一起听风雨"
+defaultContentLanguage = "en"
+languageCode = "en"
+theme = "m10c"
