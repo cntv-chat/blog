@@ -26,7 +26,7 @@ paginate = 8
 
 [params]
   author = "Peter.Lee"
-  description = "IT从业者，耶稣基督的门徒"
+  description = "IT从业者，追求自由的灵魂！"
   menu_item_separator = " - "
 #  [[params.social]]
 #    icon = "github"
@@ -35,15 +35,15 @@ paginate = 8
 #  [[params.social]]
 #    icon = "twitter"
 #    name = "Twitter"
-#    url = "https://twitter.com/gohugoio"
+#    url = "https://twitter.com/yaoshangtui"
 
   # Default theme
-  #[params.style]
-  #  darkestColor = "#242930"
-  #  darkColor = "#353b43"
-  #  lightColor = "#afbac4"
-  #  lightestColor = "#ffffff"
-  #  primaryColor = "#57cc8a"
+  [params.style]
+    darkestColor = "#242930"
+    darkColor = "#353b43"
+    lightColor = "#afbac4"
+    lightestColor = "#ffffff"
+    primaryColor = "#57cc8a"
 
   # Green theme
   #[params.style]
