@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>一起听风雨</title>
-    <link>https://www.456766.xyz/</link>
-    <description>Recent content on 一起听风雨</description>
+    <title>Posts on 一起听风雨</title>
+    <link>https://www.456766.xyz/posts/</link>
+    <description>Recent content in Posts on 一起听风雨</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 01 Nov 2023 15:40:04 +0800</lastBuildDate>
-    <atom:link href="https://www.456766.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.456766.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用CloudFlareWorkers反代当节点免费实现永久自由网络</title>
       <link>https://www.456766.xyz/posts/network/%E5%88%A9%E7%94%A8cloudflareworkers%E5%8F%8D%E4%BB%A3%E5%BD%93%E8%8A%82%E7%82%B9%E5%85%8D%E8%B4%B9%E5%AE%9E%E7%8E%B0%E6%B0%B8%E4%B9%85%E8%87%AA%E7%94%B1%E7%BD%91%E7%BB%9C/</link>
@@ -21,15 +21,6 @@
       <pubDate>Wed, 01 Nov 2023 15:32:36 +0800</pubDate>
       <guid>https://www.456766.xyz/posts/network/hugo&#43;github&#43;cloudflare%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://www.456766.xyz/about/</link>
-      <pubDate>Wed, 01 Nov 2023 15:10:46 +0800</pubDate>
-      <guid>https://www.456766.xyz/about/</guid>
-      <description>我不是一个善于写文档的人，但是从今天开始，我准备记录点什么……
-网络技术日新月异，跟不上节奏的感觉。
-搭建网站，以前需要买虚拟机，每年都需要一小笔费用，不爽！也主要是不成气候，也没能坚持。但是今天，可以不用花钱，下面就来谈一谈</description>
     </item>
   </channel>
 </rss>
