@@ -28,6 +28,7 @@ paginate = 8
   author = "Peter.Lee"
   description = "IT从业者，追求自由的灵魂！"
   menu_item_separator = " - "
+  enableGitalk = true
 #  [[params.social]]
 #    icon = "github"
 #    name = "Github"
@@ -60,3 +61,18 @@ paginate = 8
   #  lightColor = "#d6d6d6"
   #  lightestColor = "#d3d3d3"
   #  primaryColor = "#ffffff"    
+  
+
+[params.gitalk] 
+    clientID = "e6785b1a623c1270362d" # 您刚才创建Github Application 的 Client ID
+    clientSecret = "0a6ce978aeff85f56fb4aa1a2b5a1a4869d90cfe" # 您刚才创建Github Application 的 Client Secret
+    repo = "blog" # 您的博客的github地址Repository name，例如：xxxx.github.io
+    owner = "cntv-chat" # 您的GitHub ID
+    admin= "cntv-chat" # 您的GitHub ID
+    id= "location.pathname" # 文章页面的链接地址就是ID
+    labels= "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+    perPage= 15 # Pagination size, with maximum 100.
+    pagerDirection= "last" # Comment sorting direction, available values are 'last' and 'first'.
+    createIssueManually= true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+    distractionFreeMode= false # Enable hot key (cmd|ctrl + enter) submit comment.
+  
