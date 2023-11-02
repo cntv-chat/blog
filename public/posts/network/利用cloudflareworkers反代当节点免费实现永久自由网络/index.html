@@ -1,22 +1,64 @@
 <!doctype html>
 <html lang="zh-CN">
   <head>
-    <title>利用CloudFlareWorkers反代当节点免费实现永久自由网络 // 一起听风雨</title>
+    <title>利用CloudFlare Workers反代当节点，免费实现永久自由网络 // 一起听风雨</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.120.2">
+    <meta name="generator" content="Hugo 0.120.3">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Peter.Lee" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+    <link rel="stylesheet" href="/css/main.min.ead1f6492242b7d93618e6840b25260f8ea1ca68dc04cc9cf1b88adcb996693b.css" />
 
     
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="利用CloudFlareWorkers反代当节点免费实现永久自由网络"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="利用CloudFlare Workers反代当节点，免费实现永久自由网络"/>
+<meta name="twitter:description" content="你没看错，免费实现永久自由网络！
+很不幸，有很多人所处的世界是一个不自由的世界，不但在现实世界不自由，网络上也不能自由活动！好在灵魂是自由的，当然如果你的灵魂也被控制了，那太可怕了……，不过你也不用害怕，让我帮你先实现网络自由，灵魂自由就有希望了！
+一、配置 第一步，注册Cloudflare帐号 打开官网：https://www.cloudflare.com/zh-cn/，注册，登录，这些不就详细介绍了，只要一个邮箱就能实现
+第二步，创建Workers 在左侧菜单点&quot;Workers和Pages&quot;——创建Workers
+第三步，部署 第四步，修改代码 点“编辑代码”，修改成zizifn大佬的代码：https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）
+删除默认的代码，复制上面链接的代码
+注意几个地方：
+1，第7行的ID，随便找个UUID替换
+2，第9行的IP，可以找前辈们提供的，随便在下面的列表中找一个
+cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.org 保存并部署
+​	修改好之后，点击右上角的“保存并部署”，点击之后没有提示保存成功，但是实际上已经保存并帮你部署好了。
+至此反代已完成
+使用 第一步，找到你的反代地址 第二步，加上你上面的UUID，得到一个完整的Vless地址 比如我的：https://mailberry.sosel-dfd.workers.dev/868e7e9a-e3fe-407e-bbb9-3d128a9ac51b
+第三步，得到了V2ray 和clash的节点配置代码，由于workers.dev这个域名已被墙，直接使用是不行的，还要下一步 第四步，优选IP 直接使用线上优选
+CF在线优选IP：https://vfarid.github.io/cf-ip-scanner/?max=30
+这里我随便优选几个IP测试一下
+把优选的IP地址填到地址。 把端口改成80，当然，你也可以使用2052， 把TLS改成空，因为我们没有绑定域名，也没有TLS 这样就能正常使用了。
+还有一种是有自定议域名的配置，可以使用TLS，也能使用443，更优方案，但不是本文的重点，略过
+三：进阶 目前使用的反代IP已被滥用，考虑进阶优选一批第三方IP，这些IP太多人在使用，稳定性和速度都不大行，下期介绍第三方优选IP;还有绑定自定义域名，解决官方域名被墙，被污染，很多地方未必能正常长久连接问题。
+总结 通过利用CF提供的免费workers和借鉴其他专家的智慧，我们不仅仅解决了上外网的难题，还找到了更多创新的方法。这些方法包括使用代理服务器或者云计算等技术手段来实现上外网，让大众用上了免费节点，赞。
+参考原文：https://mailberry.com.cn/2023/07/use-cloudflare-workers-to-vless/"/>
 
-    <meta property="og:title" content="利用CloudFlareWorkers反代当节点免费实现永久自由网络" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="利用CloudFlare Workers反代当节点，免费实现永久自由网络" />
+<meta property="og:description" content="你没看错，免费实现永久自由网络！
+很不幸，有很多人所处的世界是一个不自由的世界，不但在现实世界不自由，网络上也不能自由活动！好在灵魂是自由的，当然如果你的灵魂也被控制了，那太可怕了……，不过你也不用害怕，让我帮你先实现网络自由，灵魂自由就有希望了！
+一、配置 第一步，注册Cloudflare帐号 打开官网：https://www.cloudflare.com/zh-cn/，注册，登录，这些不就详细介绍了，只要一个邮箱就能实现
+第二步，创建Workers 在左侧菜单点&quot;Workers和Pages&quot;——创建Workers
+第三步，部署 第四步，修改代码 点“编辑代码”，修改成zizifn大佬的代码：https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+备用地址 （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）
+删除默认的代码，复制上面链接的代码
+注意几个地方：
+1，第7行的ID，随便找个UUID替换
+2，第9行的IP，可以找前辈们提供的，随便在下面的列表中找一个
+cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org cdn-b100.xn--b6gac.eu.org edgetunnel.anycast.eu.org cdn.anycast.eu.org 保存并部署
+​	修改好之后，点击右上角的“保存并部署”，点击之后没有提示保存成功，但是实际上已经保存并帮你部署好了。
+至此反代已完成
+使用 第一步，找到你的反代地址 第二步，加上你上面的UUID，得到一个完整的Vless地址 比如我的：https://mailberry.sosel-dfd.workers.dev/868e7e9a-e3fe-407e-bbb9-3d128a9ac51b
+第三步，得到了V2ray 和clash的节点配置代码，由于workers.dev这个域名已被墙，直接使用是不行的，还要下一步 第四步，优选IP 直接使用线上优选
+CF在线优选IP：https://vfarid.github.io/cf-ip-scanner/?max=30
+这里我随便优选几个IP测试一下
+把优选的IP地址填到地址。 把端口改成80，当然，你也可以使用2052， 把TLS改成空，因为我们没有绑定域名，也没有TLS 这样就能正常使用了。
+还有一种是有自定议域名的配置，可以使用TLS，也能使用443，更优方案，但不是本文的重点，略过
+三：进阶 目前使用的反代IP已被滥用，考虑进阶优选一批第三方IP，这些IP太多人在使用，稳定性和速度都不大行，下期介绍第三方优选IP;还有绑定自定义域名，解决官方域名被墙，被污染，很多地方未必能正常长久连接问题。
+总结 通过利用CF提供的免费workers和借鉴其他专家的智慧，我们不仅仅解决了上外网的难题，还找到了更多创新的方法。这些方法包括使用代理服务器或者云计算等技术手段来实现上外网，让大众用上了免费节点，赞。
+参考原文：https://mailberry.com.cn/2023/07/use-cloudflare-workers-to-vless/" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.456766.xyz/posts/network/%E5%88%A9%E7%94%A8cloudflareworkers%E5%8F%8D%E4%BB%A3%E5%BD%93%E8%8A%82%E7%82%B9%E5%85%8D%E8%B4%B9%E5%AE%9E%E7%8E%B0%E6%B0%B8%E4%B9%85%E8%87%AA%E7%94%B1%E7%BD%91%E7%BB%9C/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-11-01T15:40:04+08:00" />
@@ -44,7 +86,7 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">利用CloudFlareWorkers反代当节点免费实现永久自由网络</h1>
+      <h1 class ="post-title">利用CloudFlare Workers反代当节点，免费实现永久自由网络</h1>
       <div class="post-meta">
         <div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
@@ -58,12 +100,74 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          0 min read
+          1 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://www.456766.xyz/tags/cloudflareworkers/">CloudflareWorkers</a>
+              <a class="tag" href="https://www.456766.xyz/tags/%E5%85%8D%E8%B4%B9vless%E8%8A%82%E7%82%B9/">免费vless节点</a>
         </div>
       </div>
     </header>
     <div class="post-content">
-      
+      <p>你没看错，免费实现永久自由网络！</p>
+<p>很不幸，有很多人所处的世界是一个不自由的世界，不但在现实世界不自由，网络上也不能自由活动！好在灵魂是自由的，当然如果你的灵魂也被控制了，那太可怕了……，不过你也不用害怕，让我帮你先实现网络自由，灵魂自由就有希望了！</p>
+<h1 id="一配置">一、配置</h1>
+<h2 id="第一步注册cloudflare帐号">第一步，注册Cloudflare帐号</h2>
+<p>打开官网：https://www.cloudflare.com/zh-cn/，注册，登录，这些不就详细介绍了，只要一个邮箱就能实现</p>
+<h2 id="第二步创建workers">第二步，创建Workers</h2>
+<p><img src="https://pic.456766.xyz/img/202311020922370.png" alt="image-20230727110740924"></p>
+<p>在左侧菜单点&quot;Workers和Pages&quot;——创建Workers</p>
+<h2 id="第三步部署">第三步，部署</h2>
+<p><img src="https://pic.456766.xyz/img/202311020924823.png" alt="image-20230727111029127"></p>
+<h2 id="第四步修改代码">第四步，修改代码</h2>
+<p><img src="https://pic.456766.xyz/img/202311020925656.png" alt="image-20230727111103682"></p>
+<p>点“编辑代码”，修改成zizifn大佬的代码：https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js</p>
+<p><a href="https://4i5i-my.sharepoint.com/:u:/g/personal/sosel_4i5i_onmicrosoft_com/EQr1zW3GUINKptRic9MlSKIBOmUXEukBXOzK6oq-ED0QQQ?e=cTDsBR">备用地址</a> （如果你打开不github的话，可以试试从onedrive下载worker-vless.js文件）</p>
+<p><img src="https://pic.456766.xyz/img/202311020925598.png" alt="image-20230727111929150"></p>
+<p>删除默认的代码，复制上面链接的代码</p>
+<p><img src="https://pic.456766.xyz/img/202311020926670.png" alt="image-20230727114051548"></p>
+<p>注意几个地方：</p>
+<p>1，第7行的ID，随便找个UUID替换</p>
+<p>2，第9行的IP，可以找前辈们提供的，随便在下面的列表中找一个</p>
+<pre tabindex="0"><code> cdn-all.xn--b6gac.eu.org
+ cdn.xn--b6gac.eu.org
+ cdn-b100.xn--b6gac.eu.org
+ edgetunnel.anycast.eu.org
+ cdn.anycast.eu.org
+</code></pre><p>保存并部署</p>
+<p>​	修改好之后，点击右上角的“保存并部署”，点击之后没有提示保存成功，但是实际上已经保存并帮你部署好了。</p>
+<p><strong>至此反代已完成</strong></p>
+<h1 id="使用">使用</h1>
+<h2 id="第一步找到你的反代地址">第一步，找到你的反代地址</h2>
+<h2 id="image-20230727114615815httpspic456766xyzimg202311020950740png"><img src="https://pic.456766.xyz/img/202311020950740.png" alt="image-20230727114615815"></h2>
+<h2 id="第二步加上你上面的uuid得到一个完整的vless地址">第二步，加上你上面的UUID，得到一个完整的Vless地址</h2>
+<p>比如我的：https://mailberry.sosel-dfd.workers.dev/868e7e9a-e3fe-407e-bbb9-3d128a9ac51b</p>
+<p><img src="https://pic.456766.xyz/img/202311020950304.png" alt="image-20230727114808392"></p>
+<h2 id="第三步得到了v2ray-和clash的节点配置代码由于workersdev这个域名已被墙直接使用是不行的还要下一步">第三步，得到了V2ray 和clash的节点配置代码，由于workers.dev这个域名已被墙，直接使用是不行的，还要下一步</h2>
+<h2 id="第四步优选ip">第四步，优选IP</h2>
+<p>直接使用线上优选</p>
+<p>CF在线优选IP：https://vfarid.github.io/cf-ip-scanner/?max=30</p>
+<p><img src="https://pic.456766.xyz/img/202311020950803.png" alt="image-20230727123517424"></p>
+<p>这里我随便优选几个IP测试一下</p>
+<p><img src="https://pic.456766.xyz/img/202311020950380.png" alt="image-20230727123735605"></p>
+<ol>
+<li>把优选的IP地址填到地址。</li>
+<li>把端口改成80，当然，你也可以使用2052，</li>
+<li>把TLS改成空，因为我们没有绑定域名，也没有TLS</li>
+</ol>
+<p><img src="https://pic.456766.xyz/img/202311020950821.png" alt="image-20230727123946613"></p>
+<p>这样就能正常使用了。</p>
+<p>还有一种是有自定议域名的配置，可以使用TLS，也能使用443，更优方案，但不是本文的重点，略过</p>
+<h1 id="三进阶">三：进阶</h1>
+<p>目前使用的反代IP已被滥用，考虑进阶优选一批第三方IP，这些IP太多人在使用，稳定性和速度都不大行，下期介绍第三方优选IP;还有绑定自定义域名，解决官方域名被墙，被污染，很多地方未必能正常长久连接问题。</p>
+<h1 id="总结">总结</h1>
+<p>通过利用CF提供的免费workers和借鉴其他专家的智慧，我们不仅仅解决了上外网的难题，还找到了更多创新的方法。这些方法包括使用代理服务器或者云计算等技术手段来实现上外网，让大众用上了免费节点，赞。</p>
+<p>参考原文：https://mailberry.com.cn/2023/07/use-cloudflare-workers-to-vless/</p>
+
     </div>
     <div class="post-footer">
       

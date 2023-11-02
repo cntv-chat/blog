@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 一起听风雨</title>
-    <link>https://www.456766.xyz/posts/</link>
-    <description>Recent content in Posts on 一起听风雨</description>
+    <title>CloudflareWorkers on 一起听风雨</title>
+    <link>https://www.456766.xyz/tags/cloudflareworkers/</link>
+    <description>Recent content in CloudflareWorkers on 一起听风雨</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 01 Nov 2023 15:40:04 +0800</lastBuildDate>
-    <atom:link href="https://www.456766.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.456766.xyz/tags/cloudflareworkers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>利用CloudFlare Workers反代当节点，免费实现永久自由网络</title>
       <link>https://www.456766.xyz/posts/network/%E5%88%A9%E7%94%A8cloudflareworkers%E5%8F%8D%E4%BB%A3%E5%BD%93%E8%8A%82%E7%82%B9%E5%85%8D%E8%B4%B9%E5%AE%9E%E7%8E%B0%E6%B0%B8%E4%B9%85%E8%87%AA%E7%94%B1%E7%BD%91%E7%BB%9C/</link>
@@ -35,13 +35,6 @@ CF在线优选IP：https://vfarid.github.io/cf-ip-scanner/?max=30
 三：进阶 目前使用的反代IP已被滥用，考虑进阶优选一批第三方IP，这些IP太多人在使用，稳定性和速度都不大行，下期介绍第三方优选IP;还有绑定自定义域名，解决官方域名被墙，被污染，很多地方未必能正常长久连接问题。
 总结 通过利用CF提供的免费workers和借鉴其他专家的智慧，我们不仅仅解决了上外网的难题，还找到了更多创新的方法。这些方法包括使用代理服务器或者云计算等技术手段来实现上外网，让大众用上了免费节点，赞。
 参考原文：https://mailberry.com.cn/2023/07/use-cloudflare-workers-to-vless/</description>
-    </item>
-    <item>
-      <title>Hugo&#43;github&#43;cloudflare搭建免费静态网站</title>
-      <link>https://www.456766.xyz/posts/network/hugo&#43;github&#43;cloudflare%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Wed, 01 Nov 2023 15:32:36 +0800</pubDate>
-      <guid>https://www.456766.xyz/posts/network/hugo&#43;github&#43;cloudflare%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
