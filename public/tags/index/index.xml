@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on 一起听风雨</title>
+    <link>https://www.456766.xyz/tags/index/</link>
+    <description>Recent content in index on 一起听风雨</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language><atom:link href="https://www.456766.xyz/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>https://www.456766.xyz/post/</link>
+      <pubDate>Wed, 01 Nov 2023 15:40:04 +0800</pubDate>
+      
+      <guid>https://www.456766.xyz/post/</guid>
+      <description>
+        
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
