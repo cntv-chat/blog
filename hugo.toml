@@ -1,5 +1,4 @@
 baseURL = "https://www.456766.xyz/"
 title = "一起听风雨"
-defaultContentLanguage = "zh-cn"
-languageCode = "zh-CN"
-theme = "m10c"
+
+theme = "clarity"

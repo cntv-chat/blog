@@ -3,7 +3,17 @@ title = '利用CloudFlare Workers反代当节点，免费实现永久自由网�
 date = 2023-11-01T15:40:04+08:00
 draft = false
 
+thumbnail = "https://pic.456766.xyz/img/202311020929323.png"
+
 tags = ['CloudflareWorkers','免费vless节点']
+
+categories =  ['网络技术']
+
+series = ['出埃及']
+
+featured = true
+
+
 
 +++
 
@@ -77,7 +87,7 @@ tags = ['CloudflareWorkers','免费vless节点']
 
 
 
-# 使用
+# 二、使用
 
 
 
