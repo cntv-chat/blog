@@ -10,7 +10,7 @@ const imageAltClass = 'img_alt';
 
 
 const defaultSiteLanguage = 'zh-CN';
-const baseURL = 'https://example.com/';
+const baseURL = 'https://www.456766.xyz/';
 const searchFieldClass = '.search_field';
 const searchClass = '.search';
 const goBackClass = 'button_back';

@@ -146,6 +146,6 @@ websiteDomain = "www.456766.xyz" # domain name of your website, most cases same 
 
 [matomo_analytics]
 enable = false # To enable matomo analytics change to `true`.
-websiteDomain = "example.com" # Set the domain name of your website, in most cases same as your base URL this is required.
-matomoDomain = "matomo.example.com" # Set to Matomo domain
+websiteDomain = "www.456766.xyz" # Set the domain name of your website, in most cases same as your base URL this is required.
+matomoDomain = "www.456766.xyz" # Set to Matomo domain
 matomoSiteID = "1" # Default is set to 1, change this to the siteid being tracked
